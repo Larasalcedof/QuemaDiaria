@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+
+
+<GridPane fx:controller="co.edu.javeriana.ingsoft.quemadiaria.solid.e.interfaces.main.controllers.RegistroController"
+          xmlns="http://javafx.com/javafx/17.0.0.1"
+          xmlns:fx="http://javafx.com/fxml/1" alignment="center"
+          hgap="10" vgap="10">
+    <padding><Insets top="40" right="40" bottom="40" left="40"/></padding>
+    <columnConstraints>
+        <ColumnConstraints minWidth="100" prefWidth="100"
+                           maxWidth="Infinity" halignment="RIGHT">
+        </ColumnConstraints>
+        <ColumnConstraints minWidth="200" prefWidth="200"
+                           maxWidth="Infinity" hgrow="ALWAYS">
+        </ColumnConstraints>
+    </columnConstraints>
+
+    <!-- Add Header Label -->
+    <Label text="Hola Quemador, Registrate!" GridPane.columnIndex="0"
+           GridPane.rowIndex="0" GridPane.columnSpan="2"
+           GridPane.rowSpan="1" GridPane.halignment="CENTER" >
+        <font>
+            <Font name="Arial" size="24" ></Font>
+        </font>
+        <GridPane.margin>
+            <Insets top="20" right="0" bottom="20" left="0"></Insets>
+        </GridPane.margin>
+    </Label>
+
+
+
+    <!-- Add Name Label -->
+    <Label text="Usuario : " GridPane.columnIndex="0"
+           GridPane.rowIndex="1" >
+    </Label>
+    <!-- Add Name Text Field -->
+    <TextField fx:id="nombreUsuarioTextField" prefHeight="40"
+               GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+
+    <!-- Add Email Label -->
+    <Label text="Correo : " GridPane.columnIndex="0"
+           GridPane.rowIndex="2" >
+    </Label>
+    <!-- Add Email Text Field -->
+    <TextField fx:id="correoUsuarioTextField" prefHeight="40"
+               GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Label text="Nombre : " GridPane.columnIndex="0"
+           GridPane.rowIndex="3" >
+    </Label>
+    <!-- Add Password Field -->
+    <TextField fx:id="nombreTextField" prefHeight="40"
+                   GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+    <Label text="Apellido : " GridPane.columnIndex="0"
+           GridPane.rowIndex="4" >
+    </Label>
+    <!-- Add Password Field -->
+    <TextField fx:id="apellidoTextField" prefHeight="40"
+                   GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+    <!-- Add Password Label -->
+    <Label text="No Documento : " GridPane.columnIndex="0"
+           GridPane.rowIndex="5" >
+    </Label>
+    <!-- Add Password Field -->
+    <TextField fx:id="documentoUsuarioTextField" prefHeight="40"
+                   GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+    <!-- Add Password Label -->
+    <Label text="Contraseña : " GridPane.columnIndex="0"
+           GridPane.rowIndex="6" >
+    </Label>
+    <!-- Add Password Field -->
+    <PasswordField fx:id="contrasennaPasswordField" prefHeight="40"
+                   GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+
+    <!-- Add Submit Button -->
+    <Button fx:id="Button" text="Reg Entrenador"
+            prefWidth="100" prefHeight="40" defaultButton="true"
+            GridPane.columnIndex="0" GridPane.rowIndex="7"
+            GridPane.columnSpan="2" GridPane.rowSpan="1"
+            GridPane.halignment="CENTER"
+            onAction="#registrarEntrenador">
+
+
+    
+        <GridPane.margin>
+            <Insets top="20" right="0" bottom="20" left="0"></Insets>
+        </GridPane.margin>
+    </Button>
+
+    <Button fx:id="Button" text="Reg Usuario"
+            prefWidth="100" prefHeight="40" defaultButton="true"
+            GridPane.columnIndex="0" GridPane.rowIndex="8"
+            GridPane.columnSpan="2" GridPane.rowSpan="1"
+            GridPane.halignment="CENTER"
+            onAction="#registrarUsuario">
+
+       
+    
+        <GridPane.margin>
+            <Insets top="20" right="0" bottom="20" left="0"></Insets>
+        </GridPane.margin>
+    </Button>
+
+     <Label fx:id="errorLabel" text="Error: Campos obligatorios vacíos" style="-fx-text-fill: red; -fx-font-weight: bold;" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="9">
+    </Label>
+    <Label fx:id="errorLabel2" text="Error: El correo o el numero de documento ya existen para un cuenta" style="-fx-text-fill: red; -fx-font-weight: bold;" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="9">
+    </Label>
+</GridPane>

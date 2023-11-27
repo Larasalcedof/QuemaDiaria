@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      prefWidth="400" prefHeight="200"
+      alignment="CENTER" spacing="20">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Text text="Registro Exitoso">
+        <font>
+            <Font size="24" /> 
+        </font>
+    </Text>
+
+    <Text text="¡Tu registro ha sido exitoso!">
+        <font>
+            <Font size="16" /> 
+        </font>
+    </Text>
+
+
+</VBox>
