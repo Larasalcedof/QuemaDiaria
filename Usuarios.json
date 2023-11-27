@@ -1,0 +1,18 @@
+[
+  {
+    "numeroDocumento": "123456789",
+    "nombre": "Juan",
+    "apellido": "Perez",
+    "correo": "jperez@gmail.com",
+    "usuario": "jperez",
+    "contrasena": "MTIzNDU2"
+  },
+  {
+    "numeroDocumento": "987654321",
+    "nombre": "Juan",
+    "apellido": "Rodriguez",
+    "correo": "jrodriguez@javeriana.edu.co",
+    "usuario": "jrodriguez",
+    "contrasena": "MzQ1Njc5"
+  }
+]
